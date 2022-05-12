@@ -8,7 +8,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 
 @Suppress("unused")
-class SdkModule(val context: ReactApplicationContext) : ReactContextBaseJavaModule() {
+class SdkModule(val context: ReactApplicationContext) : ReactContextBaseJavaModule(context) {
   override fun getName(): String {
     return "AMapSdk"
   }
